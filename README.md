@@ -4,12 +4,12 @@
 
 `brew install mostlygeek/llama-swap/llama-swap`
 
-Or 
+Or
 
-`brew tap mostlygeek/llama-swap`
-
-`brew install llama-swap`
-
+```
+brew tap mostlygeek/llama-swap
+brew install llama-swap
+```
 Or
 
 In a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
