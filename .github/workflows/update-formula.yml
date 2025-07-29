@@ -1,0 +1,20 @@
+
+name: Update Homebrew Formula
+on:
+  repository_dispatch:
+    types: [new-release]
+
+jobs:
+  update-formula:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout Homebrew tap repository"
+        uses: actions/checkout@v3
+
+      - name: "Bump Homebrew formula"
+        uses: mislav/bump-homebrew-formula-action@v3
+        with:
+          formula_path: "Formula/llama-swap.rb"
+          tag_name: ${{ github.event.client_payload.release.tag_name }}
+        env:
+          COMMITTER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
