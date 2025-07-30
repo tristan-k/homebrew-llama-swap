@@ -39,7 +39,8 @@ brew "llama-swap"
 ## TODO:
 - [x] ~~Set up brew install.~~
 - [x] ~~Add documentation~~
-- [ ] Add workflow to update `Formula/llama-swap.rb` when new releases are pushed from [llama-swap](https://github.com/mostlygeek/llama-swap)
+- [x] Add workflow to update `Formula/llama-swap.rb` when new releases are pushed from [llama-swap](https://github.com/mostlygeek/llama-swap)
+- [ ] Move formula to the official `homebrew/core` tap once [llama-swap](https://github.com/mostlygeek/llama-swap) adheres to `homebrew` guidelines. 
 
 
 
