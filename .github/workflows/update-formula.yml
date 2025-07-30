@@ -70,6 +70,10 @@ jobs:
           sed -i '/darwin_amd64/!b;n;s/sha256 ".*"/sha256 "'"$DARWIN_AMD64_SHA"'"/' Formula/llama-swap.rb
           sed -i '/linux_arm64/!b;n;s/sha256 ".*"/sha256 "'"$LINUX_ARM64_SHA"'"/' Formula/llama-swap.rb
           sed -i '/linux_amd64/!b;n;s/sha256 ".*"/sha256 "'"$LINUX_AMD64_SHA"'"/' Formula/llama-swap.rb
+      
+      - name: Set push URL with PAT
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.PAT_PUSH_TOKEN }}@github.com/mostlygeek/homebrew-llama-swap
 
       - name: Commit and push changes
         run: |
