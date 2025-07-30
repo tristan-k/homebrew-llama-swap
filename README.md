@@ -6,7 +6,7 @@
 
 Or
 
-```
+```bash
 brew tap mostlygeek/llama-swap
 brew install llama-swap
 ```
@@ -16,7 +16,7 @@ In a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
 tap "mostlygeek/llama-swap"
-cask "llama-swap"
+brew "llama-swap"
 ```
 
 ## Running llama-swap
