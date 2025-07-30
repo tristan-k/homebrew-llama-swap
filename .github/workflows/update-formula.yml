@@ -1,9 +1,15 @@
 
 name: Update Homebrew Formula
+
+# allow for git commit ... 
+permissions:
+  contents: write
+
 on:
   repository_dispatch:
     types: [new-release]
 
+  
 jobs:
   extract-checksums:
     runs-on: ubuntu-latest
