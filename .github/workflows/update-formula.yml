@@ -8,6 +8,7 @@ permissions:
 on:
   repository_dispatch:
     types: [new-release]
+  workflow_dispatch:
 
   
 jobs:
