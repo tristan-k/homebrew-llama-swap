@@ -1,7 +1,7 @@
 class LlamaSwap < Formula
   desc "Proxy server for swapping models on llama.cpp"
   homepage "https://github.com/mostlygeek/llama-swap"
-  version ""
+  version "150"
   license "MIT"
 
   on_macos do
