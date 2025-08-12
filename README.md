@@ -23,7 +23,7 @@ brew "llama-swap"
 
 
 1. Create a configuration file, see the [configuration documentation](https://github.com/mostlygeek/llama-swap/wiki/Configuration).
-1. Run the binary with `llama-swap --config path/to/config.yaml --listen localhost:8080`.
+1. Run the binary with `llama-swappo --config path/to/config.yaml --listen localhost:8080`.
    Available flags:
    - `--config`: Path to the configuration file (default: `config.yaml`).
    - `--listen`: Address and port to listen on (default: `:8080`).
