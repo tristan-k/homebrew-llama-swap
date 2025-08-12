@@ -2,12 +2,12 @@
 
 ## Setup
 
-`brew install mostlygeek/llama-swap/llama-swap`
+`brew install tristan-k/llama-swap/llama-swap`
 
 Or
 
 ```bash
-brew tap mostlygeek/llama-swap
+brew tap tristan-k/llama-swap
 brew install llama-swap
 ```
 Or
@@ -15,7 +15,7 @@ Or
 In a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-tap "mostlygeek/llama-swap"
+tap "tristan-k/llama-swap"
 brew "llama-swap"
 ```
 
