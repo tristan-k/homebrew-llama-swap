@@ -27,10 +27,10 @@ class LlamaSwap < Formula
   end
 
   def install
-    bin.install "llama-swap"
+    bin.install "llama-swappo"
   end
 
   test do
-    system "#{bin}/llama-swap", "--version"
+    system "#{bin}/llama-swappo", "--version"
   end
 end
