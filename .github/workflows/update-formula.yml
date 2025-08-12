@@ -35,7 +35,7 @@ jobs:
         run: |
           TAG_NAME=${{steps.extract_info.outputs.TAG_NAME}}
           VERSION=${{steps.extract_info.outputs.VERSION}}
-          curl -L -o llama-swap_${VERSION}_checksums.txt https://github.com/mostlygeek/llama-swap/releases/download/${TAG_NAME}/llama-swap_${VERSION}_checksums.txt
+          curl -L -o llama-swap_${VERSION}_checksums.txt https://github.com/tristan-k/llama-swappo/releases/download/${TAG_NAME}/llama-swap_${VERSION}_checksums.txt
 
       - name: Extract and set checksums as outputs
         id: extract
@@ -73,7 +73,7 @@ jobs:
       
       - name: Set push URL with PAT
         run: |
-          git remote set-url origin https://x-access-token:${{ secrets.PAT_PUSH_TOKEN }}@github.com/mostlygeek/homebrew-llama-swap
+          git remote set-url origin https://x-access-token:${{ secrets.PAT_PUSH_TOKEN }}@github.com/tristan-k/homebrew-llama-swap
 
       - name: Commit and push changes
         run: |
