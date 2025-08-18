@@ -2,13 +2,13 @@
 
 ## Setup
 
-`brew install tristan-k/llama-swap/llama-swap`
+`brew install tristan-k/llama-swap/llama-swappo`
 
 Or
 
 ```bash
 brew tap tristan-k/llama-swap
-brew install llama-swap
+brew install llama-swappo
 ```
 Or
 
@@ -16,7 +16,7 @@ In a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
 tap "tristan-k/llama-swap"
-brew "llama-swap"
+brew "llama-swappo"
 ```
 
 ## Running llama-swap
