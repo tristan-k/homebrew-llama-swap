@@ -1,4 +1,4 @@
-class LlamaSwap < Formula
+class LlamaSwappo < Formula
   desc "Proxy server for swapping models on llama.cpp"
   homepage "https://github.com/tristan-k/llama-swappo"
   version "153"
