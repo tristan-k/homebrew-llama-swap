@@ -66,11 +66,11 @@ jobs:
           LINUX_AMD64_SHA=${{ needs.extract-checksums.outputs.LINUX_AMD64 }}
           LINUX_ARM64_SHA=${{ needs.extract-checksums.outputs.LINUX_ARM64 }}
 
-          sed -i 's/version ".*"/version "'"$VERSION"'"/' Formula/llama-swap.rb
-          sed -i '/darwin_arm64/!b;n;s/sha256 ".*"/sha256 "'"$DARWIN_ARM64_SHA"'"/' Formula/llama-swap.rb
-          sed -i '/darwin_amd64/!b;n;s/sha256 ".*"/sha256 "'"$DARWIN_AMD64_SHA"'"/' Formula/llama-swap.rb
-          sed -i '/linux_arm64/!b;n;s/sha256 ".*"/sha256 "'"$LINUX_ARM64_SHA"'"/' Formula/llama-swap.rb
-          sed -i '/linux_amd64/!b;n;s/sha256 ".*"/sha256 "'"$LINUX_AMD64_SHA"'"/' Formula/llama-swap.rb
+          sed -i 's/version ".*"/version "'"$VERSION"'"/' Formula/llama-swappo.rb
+          sed -i '/darwin_arm64/!b;n;s/sha256 ".*"/sha256 "'"$DARWIN_ARM64_SHA"'"/' Formula/llama-swappo.rb
+          sed -i '/darwin_amd64/!b;n;s/sha256 ".*"/sha256 "'"$DARWIN_AMD64_SHA"'"/' Formula/llama-swappo.rb
+          sed -i '/linux_arm64/!b;n;s/sha256 ".*"/sha256 "'"$LINUX_ARM64_SHA"'"/' Formula/llama-swappo.rb
+          sed -i '/linux_amd64/!b;n;s/sha256 ".*"/sha256 "'"$LINUX_AMD64_SHA"'"/' Formula/llama-swappo.rb
       
       - name: Set push URL with PAT
         run: |
@@ -80,6 +80,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add Formula/llama-swap.rb
+          git add Formula/llama-swappo.rb
           git commit -m "Update llama-swap formula to version ${{ needs.extract-checksums.outputs.VERSION }}"
           git push
